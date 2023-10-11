@@ -4,6 +4,9 @@ from classes.abstractclass import GetVacancies
 
 
 class SuperJob(GetVacancies):
+    """
+    Класс получения вакансий с сайта superjobs.ru
+    """
     def __init__(self, search_query, salary=None, show_salary=0):
         self.search_query = search_query
         self.salary = salary

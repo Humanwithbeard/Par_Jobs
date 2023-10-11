@@ -2,6 +2,9 @@ from classes.vacancies import Vacancy
 
 
 def format_vacancies_hh(data):
+    """
+    Форматирование данных вакансий с hh.ru
+    """
     for el in data['items']:
         if not el['salary']:
             el['salary'] = {}
@@ -15,6 +18,9 @@ def format_vacancies_hh(data):
 
 
 def format_vacancies_sj(data):
+    """
+    Форматирование данных вакансий с hh.ru
+    """
     for el in data['objects']:
         title = el['profession']
         desc = el['candidat']

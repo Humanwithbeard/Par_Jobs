@@ -4,6 +4,9 @@ from classes.abstractclass import GetVacancies
 
 
 class HeadHunter(GetVacancies):
+    """
+    Класс получения вакансий с сайта hh.ru
+    """
     def __init__(self, search_query, salary=None, show_salary=False):
         self.search_query = search_query
         self.salary = salary

@@ -3,6 +3,9 @@ import os
 
 
 class JsonEditor:
+    """
+    Класс для работы с json файлом
+    """
     def __init__(self):
         self.directory = 'saved_data'
         self.file_path = os.path.join(self.directory, 'vacancies.json')

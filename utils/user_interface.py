@@ -6,6 +6,9 @@ from format_vacancies_file import format_vacancies_hh, format_vacancies_sj
 
 
 def user_interface():
+    """
+    Взаимодействие с пользователем
+    """
     json_editor = JsonEditor()
     json_editor.clear_file()
     while True:
@@ -80,6 +83,9 @@ def user_interface():
 
 
 def sort_vacancies_by_salary(vacancies, top_n):
+    """
+     Сортирует вакансии по зарплате
+    """
     def key_to_sort(key):
         return key["salary_from"]
 
