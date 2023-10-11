@@ -2,7 +2,7 @@ from classes.headhunters import HeadHunter
 from classes.json_editor import JsonEditor
 from classes.superjob import SuperJob
 from classes.vacancies import Vacancy
-from format_vacancies_file import format_vacancies_hh, format_vacancies_sj
+from utils.format_vacancies_file import format_vacancies_hh, format_vacancies_sj
 
 
 def user_interface():
