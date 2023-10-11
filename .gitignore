@@ -12,3 +12,6 @@ __pycache__/
 .vscode/
 *.iml
 *.swp
+data/
+*.zip
+*.tar.gz
