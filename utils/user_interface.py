@@ -2,7 +2,7 @@ from classes.headhunters import HeadHunter
 from classes.json_editor import JsonEditor
 from classes.superjob import SuperJob
 from classes.vacancies import Vacancy
-from format_vacancies import format_vacancies_hh, format_vacancies_sj
+from format_vacancies_file import format_vacancies_hh, format_vacancies_sj
 
 
 def user_interface():
@@ -10,7 +10,7 @@ def user_interface():
     json_editor.clear_file()
     while True:
         choice = input("Выберите платформу с которой хотите получить вакансии:\n"
-                       " 1 - HeadHunter\n 2 - SuperJob\n 3 - HeadHunter&SuperJob\n 4 - Выход\n")
+                       " 1 - HeadHunter\n 2 - SuperJob\n 3 - HeadHunter&SuperJob\n 4 - Выход:\n")
         if choice == '1':
             search_query = input("Введите ключевое слово вакансии: ")
             salary = input("Можете ввести желаемый уровень зарплаты ")
@@ -73,10 +73,10 @@ def user_interface():
                     top_n = input("Выберите число ТОП вакансий по минимальной зарплате ")
                 sort_vacancies_by_salary(vacancies, int(top_n))
         elif choice == '4':
-            print("Удачного дня!")
+            print("Всего хорошего!")
             break
         else:
-            print("Ошибочный запрос!")
+            print("Ошибка!")
 
 
 def sort_vacancies_by_salary(vacancies, top_n):
