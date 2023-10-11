@@ -1,0 +1,14 @@
+venv/
+env/
+.venv/
+.env/
+*.pyc
+__pycache__/
+.env
+.env.local
+.env.*.local
+.python-version
+.idea/
+.vscode/
+*.iml
+*.swp
